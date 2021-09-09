@@ -45,48 +45,6 @@ class System:
     name: str
     information: SysInformation
 
-    """def __init__(self, **entries):
-        for k, v in entries.items():
-            if isinstance(v, dict):
-                self.__dict__[k] = System(**v)
-            else:
-                self.__dict__[k] = v
-
-    def __str__(self):
-        return self.name
-
-    def __int__(self):
-        return self.distance
-
-    def __lt__(self, other):
-        if isinstance(other, System):
-            return self.distance < other.distance
-        return False
-
-    def __le__(self, other):
-        if isinstance(other, System):
-            return self.distance <= other.distance
-        return False
-
-    def __eq__(self, other):
-        if isinstance(other, System):
-            return self.distance == other.distance
-        return False
-
-    def __ne__(self, other):
-        if isinstance(other, System):
-            return self.distance != other.distance
-        return False
-
-    def __gt__(self, other):
-        if isinstance(other, System):
-            return self.distance > other.distance
-        return False
-
-    def __ge__(self, other):
-        if isinstance(other, System):
-            return self.distance >= other.distance
-        return False"""
 
 
 def start():
@@ -143,4 +101,3 @@ if __name__ == '__main__':
     root.grid_columnconfigure(0, weight=1)
 
     root.mainloop()
-    # start()
